@@ -19,6 +19,28 @@ Clearly, this project could become much stronger with more experimental data, br
 
 ---
 
+## Project Pipeline
+
+The workflow used in this project follows the sequence below:
+
+Experimental Oxidation Data  
+↓  
+Deal–Grove Model Fit  
+↓  
+Extraction of B at Each Temperature  
+↓  
+Arrhenius Temperature Fit  
+↓  
+Physics-Based Thickness Prediction  
+↓  
+Residual Calculation (Measured − Physics)  
+↓  
+Gaussian Process Residual Model  
+↓  
+Hybrid Prediction (Physics + GP Correction)  
+↓  
+Streamlit GUI for Interactive Predictions
+
 ## Working Experimental Range
 
 This model is currently intended only for interpolation within the experimental range used in the dataset:
@@ -30,7 +52,7 @@ Predictions outside of this range should be treated cautiously.
 
 ---
 
-## Modeling Logic
+## Model Methodology
 
 ## 1. Deal-Grove Oxidation Physics
 
@@ -144,6 +166,17 @@ A simple Streamlit GUI was also created so the user can interact with the model 
 The GUI allows a user to enter temperature and time values and receive a predicted oxide thickness from the hybrid model. This was included to make the proof of concept more accessible and to show how the model could eventually be used in a more practical workflow.
 
 ---
+
+## Tech Stack
+
+This project was implemented in Python using:
+
+- NumPy
+- Pandas
+- SciPy
+- scikit-learn
+- Matplotlib
+- Streamlit
 
 ## Repository File Guide
 
