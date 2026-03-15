@@ -161,7 +161,7 @@ x_{\text{final}}(T,t) = x_{\text{physics}}(T,t) + x_{\text{GP}}(T,t)
 
 ## 7. Streamlit GUI
 
-A simple Streamlit GUI was also created so the user can interact with the model more easily.
+A simple Streamlit GUI was also created so the user can interact with the model more easily. This GUI is where the user will enter their desired thikcness or time and temperature values to get the programs output. When using this code this is where the user will spend most of their time. Once the folder is opened in python, in the terminal run "streamlit run scripts/GUI_Predictor.py". Ensure stream lit is installed, if not, install streamlit using "pip install streamlit". 
 
 The GUI allows a user to enter temperature and time values and receive a predicted oxide thickness from the hybrid model. This was included to make the proof of concept more accessible and to show how the model could eventually be used in a more practical workflow.
 
